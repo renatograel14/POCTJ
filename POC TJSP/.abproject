@@ -1,0 +1,28 @@
+{
+  "ProjectName": "POC TJSP",
+  "ProjectGuid": "c125b6cc-0374-412d-9924-85c58e2d1c3e",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.POCTJSP",
+  "DisplayName": "POC TJSP",
+  "Author": "",
+  "Description": "POC TJSP",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "FrameworkVersion": "2.0.0",
+  "Framework": "NativeScript"
+}
