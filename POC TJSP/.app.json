@@ -5,12 +5,90 @@
       "type": "NativeScript:view",
       "name": "homeView",
       "components": [],
-      "title": "Home View",
+      "title": "TJSPMóvel",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "NativeScript:view",
+      "name": "noticias",
+      "components": [
+        {
+          "type": "NativeScript:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "components": [],
+          "name": "noticiasModel",
+          "dataProvider": "pocTjsp",
+          "collection": "Noticia",
+          "headerField": "Descricao",
+          "imageField": "Imagem",
+          "subHeaderField": "Date",
+          "isMapView": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "deleteItemButton": false,
+          "detailHeaderFieldSource": "dataBound",
+          "detailHeaderField": "Date",
+          "detailSubHeaderField": "Descricao",
+          "detailImageField": "Imagem",
+          "addItemForm": false,
+          "editItemForm": false
+        }
+      ],
+      "title": "Notícias",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "NativeScript:view",
+      "name": "servicos",
+      "components": [],
+      "title": "Serviços",
+      "addToNavigation": true,
+      "icon": "settings"
+    },
+    {
+      "type": "NativeScript:view",
+      "name": "consultas",
+      "components": [
+        {
+          "type": "NativeScript:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "components": [],
+          "name": "consultasModel",
+          "dataProvider": "pocTjsp",
+          "collection": "Processo",
+          "headerField": "Numero",
+          "subHeaderField": "Assunto",
+          "isMapView": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "deleteItemButton": false,
+          "detailHeaderFieldSource": "dataBound",
+          "detailHeaderField": "Numero",
+          "detailSubHeaderField": "Instancia",
+          "detailDescriptionField": "Controle",
+          "addItemForm": false,
+          "editItemForm": false
+        }
+      ],
+      "title": "Consulta de Processos",
+      "addToNavigation": true,
+      "icon": "search"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "NativeScript:dataProvider",
+      "name": "pocTjsp",
+      "title": "POC TJSP / POC TJSP",
+      "source": "everlive",
+      "everliveKey": "ydzxxh9xwnuuxcrn",
+      "offlineStorage": false
+    }
+  ],
   "name": "nativeScriptApp",
   "navigation": "listmenu",
   "transition": "none",
